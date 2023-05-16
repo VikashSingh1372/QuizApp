@@ -133,7 +133,6 @@ public class QuizServiceImpl implements QuizService {
 
 	// all quiz
 	@Override
-	@Cacheable(value = "quiz")
 	public ResponseEntity<Object> allQuiz() {
 		List<Quiz> allQuiz = this.quizRepo.findAll();
 
